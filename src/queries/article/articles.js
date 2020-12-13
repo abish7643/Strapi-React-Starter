@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const ARTICLES_QUERY = gql`
   query Articles {
-    articles {
+    articles(publicationState: LIVE, sort: "id:desc") {
       id
       title
       category {
