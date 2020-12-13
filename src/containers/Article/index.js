@@ -10,7 +10,8 @@ const Article = () => {
   let { id } = useParams();
   return (
     <Query query={ARTICLE_QUERY} id={id}>
-      {({ data: { article } }) => {
+      {({ data: { articles } }) => {
+        const article = articles[0];
         const imageUrl =
           process.env.NODE_ENV !== "development"
             ? article.image.url
