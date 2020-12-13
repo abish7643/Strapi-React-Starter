@@ -9,7 +9,9 @@ const Category = () => {
 
   return (
     <Query query={CATEGORY_ARTICLES_QUERY} id={id}>
-      {({ data: { category } }) => {
+      {({ data: { categories } }) => {
+        // console.log(categories);
+        const category = categories[0];
         return (
           <div>
             <div className="uk-section">

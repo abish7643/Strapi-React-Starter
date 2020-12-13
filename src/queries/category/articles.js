@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 const CATEGORY_ARTICLES_QUERY = gql`
   query Category($id: ID!) {
-    category(id: $id) {
+    categories(where: { id: $id }, publicationState: LIVE, limit: 1) {
       id
       name
       articles {
