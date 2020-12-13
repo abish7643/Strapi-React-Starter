@@ -1,14 +1,5 @@
 # Strapi Starter React Blog
 
-> **Warning :warning:**
->
-> This starter is deprecated and relies on the deprecated **[strapi/strapi-legacy-blog](https://github.com/strapi/strapi-legacy-blog)** repository.
->
-> Instead, we recommend that you use our other React blog starters with better SEO support:
->
-> * [**strapi-starter-gatsby-blog**](https://github.com/strapi/strapi-starter-gatsby-blog)
-> * [**strapi-starter-next-blog**](https://github.com/strapi/strapi-starter-next-blog)
-
 React starter for creating a blog with Strapi.
 
 This starter allows you to try Strapi with React with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
