@@ -8,7 +8,7 @@ const Card = ({ article }) => {
       : // : process.env.REACT_APP_BACKEND_URL + article.image.url;
         article.image.url;
   return (
-    <Link to={`/article/${article.id}`} className="uk-link-reset">
+    <Link to={`/article/${article.slug}`} className="uk-link-reset">
       <div className="uk-card uk-card-muted">
         <div className="uk-card-media-top">
           <img src={imageUrl} alt={article.image.url} height="100" />

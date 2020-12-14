@@ -7,9 +7,9 @@ import Moment from "react-moment";
 import ARTICLE_QUERY from "../../queries/article/article";
 
 const Article = () => {
-  let { id } = useParams();
+  let { slug } = useParams();
   return (
-    <Query query={ARTICLE_QUERY} id={id}>
+    <Query query={ARTICLE_QUERY} id={slug}>
       {({ data: { articles } }) => {
         const article = articles[0];
         const imageUrl =

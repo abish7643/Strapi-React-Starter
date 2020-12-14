@@ -5,10 +5,10 @@ import Query from "../../components/Query";
 import CATEGORY_ARTICLES_QUERY from "../../queries/category/articles";
 
 const Category = () => {
-  let { id } = useParams();
+  let { slug } = useParams();
 
   return (
-    <Query query={CATEGORY_ARTICLES_QUERY} id={id}>
+    <Query query={CATEGORY_ARTICLES_QUERY} id={slug}>
       {({ data: { categories } }) => {
         // console.log(categories);
         const category = categories[0];

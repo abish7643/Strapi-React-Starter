@@ -1,10 +1,11 @@
 import gql from "graphql-tag";
 
 const ARTICLE_QUERY = gql`
-  query Articles($id: ID!) {
-    articles(where: { id: $id }, publicationState: LIVE, limit: 1) {
+  query Articles($id: String) {
+    articles(where: { slug: $id }, publicationState: LIVE, limit: 1) {
       id
       title
+      slug
       content
       image {
         url

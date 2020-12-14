@@ -26,7 +26,7 @@ const Nav = () => {
                       return (
                         <li key={category.id}>
                           <Link
-                            to={`/category/${category.id}`}
+                            to={`/category/${category.slug}`}
                             className="uk-link-reset"
                           >
                             {category.name}

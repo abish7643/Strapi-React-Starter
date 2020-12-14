@@ -13,8 +13,8 @@ function App() {
       <Nav />
       <Switch>
         <Route path="/" component={Articles} exact />
-        <Route path="/article/:id" component={Article} exact />
-        <Route path="/category/:id" component={Category} exact />
+        <Route path="/article/:slug" component={Article} exact />
+        <Route path="/category/:slug" component={Category} exact />
       </Switch>
     </div>
   );

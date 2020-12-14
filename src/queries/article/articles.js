@@ -9,6 +9,7 @@ const ARTICLES_QUERY = gql`
     ) {
       id
       title
+      slug
       category {
         id
         name
