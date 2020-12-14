@@ -6,7 +6,7 @@ const CATEGORY_ARTICLES_QUERY = gql`
       id
       name
       slug
-      articles(sort: "id:desc") {
+      articles(sort: "id:desc", where: { status: "published" }) {
         id
         title
         slug

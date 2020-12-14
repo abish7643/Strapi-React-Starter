@@ -2,7 +2,11 @@ import gql from "graphql-tag";
 
 const ARTICLE_QUERY = gql`
   query Articles($id: String) {
-    articles(where: { slug: $id }, publicationState: LIVE, limit: 1) {
+    articles(
+      where: { slug: $id, status: "published" }
+      publicationState: LIVE
+      limit: 1
+    ) {
       id
       title
       slug
