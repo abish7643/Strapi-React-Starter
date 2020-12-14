@@ -5,7 +5,7 @@ const CATEGORY_ARTICLES_QUERY = gql`
     categories(where: { id: $id }, publicationState: LIVE, limit: 1) {
       id
       name
-      articles {
+      articles(sort: "id:desc") {
         id
         title
         content
